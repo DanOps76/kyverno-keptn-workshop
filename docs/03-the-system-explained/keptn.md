@@ -62,6 +62,9 @@ spec:
   python:
     httpRef: 
       url: https://raw.githubusercontent.com/{{ .Values.repo.name }}/{{ .Values.repo.revision }}/tasks/checkmaintenance.py
+    parameters:
+      map:
+        url: https://raw.githubusercontent.com/{{ .Values.repo.name }}/{{ .Values.repo.revision }}/data/maintenance.json
 {% endraw %}
 ```
 
